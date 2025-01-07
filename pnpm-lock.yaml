@@ -56,6 +56,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
+      zephyr-rspack-plugin:
+        specifier: ^0.0.31
+        version: 0.0.31(@swc/helpers@0.5.15)(webpack@5.97.1)
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.9.3
@@ -1862,6 +1865,11 @@ snapshots:
       find-package-json: 1.2.0
       webpack: 5.97.1(esbuild@0.17.19)
 
+  '@module-federation/automatic-vendor-federation@1.2.1(webpack@5.97.1)':
+    dependencies:
+      find-package-json: 1.2.0
+      webpack: 5.97.1
+
   '@module-federation/bridge-react-webpack-plugin@0.8.7':
     dependencies:
       '@module-federation/sdk': 0.8.7
@@ -3182,7 +3190,6 @@ snapshots:
       serialize-javascript: 6.0.2
       terser: 5.37.0
       webpack: 5.97.1
-    optional: true
 
   terser@5.37.0:
     dependencies:
@@ -3288,7 +3295,6 @@ snapshots:
       - '@swc/core'
       - esbuild
       - uglify-js
-    optional: true
 
   webpack@5.97.1(esbuild@0.17.19):
     dependencies:
@@ -3429,6 +3435,47 @@ snapshots:
       - uglify-js
       - utf-8-validate
       - webpack
+      - webpack-cli
+
+  zephyr-rspack-plugin@0.0.31(@swc/helpers@0.5.15)(webpack@5.97.1):
+    dependencies:
+      '@module-federation/automatic-vendor-federation': 1.2.1(webpack@5.97.1)
+      '@rspack/core': 1.1.8(@swc/helpers@0.5.15)
+      is-ci: 3.0.1
+      tslib: 2.8.1
+      zephyr-agent: 0.0.31
+      zephyr-edge-contract: 0.0.31
+      zephyr-xpack-internal: 0.0.31
+    transitivePeerDependencies:
+      - '@cloudflare/workers-types'
+      - '@swc/core'
+      - '@swc/helpers'
+      - bufferutil
+      - encoding
+      - esbuild
+      - supports-color
+      - uglify-js
+      - utf-8-validate
+      - webpack
+      - webpack-cli
+
+  zephyr-xpack-internal@0.0.31:
+    dependencies:
+      '@module-federation/automatic-vendor-federation': 1.2.1(webpack@5.97.1)
+      is-ci: 3.0.1
+      tslib: 2.8.1
+      webpack: 5.97.1
+      zephyr-agent: 0.0.31
+      zephyr-edge-contract: 0.0.31
+    transitivePeerDependencies:
+      - '@cloudflare/workers-types'
+      - '@swc/core'
+      - bufferutil
+      - encoding
+      - esbuild
+      - supports-color
+      - uglify-js
+      - utf-8-validate
       - webpack-cli
 
   zephyr-xpack-internal@0.0.31(esbuild@0.17.19):

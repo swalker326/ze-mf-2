@@ -12,7 +12,8 @@
   "dependencies": {
     "@module-federation/enhanced": "^0.8.7",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "zephyr-rspack-plugin": "^0.0.31"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.3",

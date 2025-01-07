@@ -5,7 +5,6 @@ import { withZephyr } from "zephyr-rspack-plugin";
 
 const zephyrRsbuildPlugin = (): RsbuildPlugin => ({
   name: "zephyr-rsbuild-plugin",
-
   setup: (api) => {
     api.modifyRspackConfig(async (config, utils) => {
       const zephyrConfig = await withZephyr()(config);
